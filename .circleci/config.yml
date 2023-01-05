@@ -13,5 +13,8 @@ jobs:
       - run:
           name: Giving permissions
           command: chmod +x mvnw
+      - run:
+          name: List all files
+          command: ls -la
       - run:   
           command: ./mvnw -Dmaven.test.skip=true package
